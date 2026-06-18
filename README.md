@@ -47,14 +47,15 @@ Only the state management layer changes.
 
 ## Architecture
 
+```txt
 Client
-├── components      (shared UI)
-├── services        (WebSocket communication)
-├── types           (shared domain models)
+├── components          (shared UI)
+├── services            (WebSocket communication)
+├── types               (shared domain models)
 └── state
     ├── hooks/useLocalBoard
     ├── context
-    └── store (Zustand)
+    └── store           (Zustand)
 
 Backend
 ├── WebSocket Server
